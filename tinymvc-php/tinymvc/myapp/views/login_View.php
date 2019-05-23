@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="" method="post">
+      <form action="home_Controller.php" method="post">
         <p>
             <!--<label for="voornaam">Voornaam:</label>-->
             <input type="text" name="gebruikersnaam" id="gebruikersnaam" placeholder="Gebruikersnaam" />
