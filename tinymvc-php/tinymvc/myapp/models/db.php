@@ -47,4 +47,8 @@ class db extends TinyMVC_Model
       $stmt = $this->conn->prepare("DELETE FROM ".$table." WHERE contact_id=".$contact_id);
       $stmt->execute();
     }
+
+    public function checkLogin($table="gebruikers",$gebruiker_id=1){
+      $sql = "SELECT loginstatus FROM".$table." WHERE gebruiker_id =".$gebruiker_id;
+    }
 }
